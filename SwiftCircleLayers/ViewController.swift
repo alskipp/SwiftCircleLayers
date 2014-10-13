@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        for touch in touches {
+            let circleCenter = touch.locationInView(view)
+            let radius = CGFloat(25 + (arc4random() % 50))
+            
+            let circleLayer = CircleLayer(position: CGPoint(x: circleCenter.x-radius, y: circleCenter.y-radius), radius: radius)
+            
+            view.layer.addSublayer(circleLayer)
+        }
+    }
 }
 
