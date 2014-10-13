@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserverForName(UIApplicationWillEnterForegroundNotification, object:nil, queue:nil, usingBlock: { [unowned self] _ in
+            for layer in self.view.layer.sublayers {
+                if let circle = layer as? CircleLayer {
+                    circle.startPulsing()
+                }
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {
