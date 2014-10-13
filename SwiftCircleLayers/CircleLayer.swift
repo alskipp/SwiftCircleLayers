@@ -12,7 +12,7 @@ class CircleLayer: CALayer {
 
     init(position:CGPoint, radius:CGFloat) {
         super.init()
-        frame = CGRectMake(position.x, position.y, radius*2, radius*2)
+        frame = CGRect(x: position.x, y: position.y, width: radius*2, height: radius*2)
         masksToBounds = true
         cornerRadius = radius
         borderWidth = 3
