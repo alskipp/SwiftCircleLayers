@@ -18,6 +18,17 @@ class CircleLayer: CALayer {
         self.borderWidth = 3
         self.backgroundColor = UIColor(hue: 0.65, saturation: 0.7, brightness: 0.6, alpha: 0.1).CGColor
         self.borderColor = UIColor(hue: 0.65, saturation: 0.8, brightness: 0.5, alpha: 0.15).CGColor
+        
+        startPulsing()
+    }
+    
+    func startPulsing() {
+        let anim = CABasicAnimation(keyPath: "transform")
+        anim.toValue = NSValue(CATransform3D:CATransform3DMakeScale(0.6, 0.6, 1))
+        anim.duration = 0.5
+        anim.autoreverses = true
+        anim.repeatCount = HUGE
+        self.addAnimation(anim, forKey: "pulsate")
     }
     
     required init(coder aDecoder: NSCoder) {
