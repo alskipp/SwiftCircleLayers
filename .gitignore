@@ -1,0 +1,4 @@
+InfoPlist.h
+*.xcuserstate
+xcuserdata/
+!WorkspaceSettings.xcsettings
