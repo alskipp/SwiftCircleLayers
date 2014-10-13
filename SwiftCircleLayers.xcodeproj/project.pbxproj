@@ -13,6 +13,7 @@
 		E7BE396319EC199E008C7994 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BE396219EC199E008C7994 /* Images.xcassets */; };
 		E7BE396619EC199E008C7994 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE396419EC199E008C7994 /* LaunchScreen.xib */; };
 		E7BE397219EC199E008C7994 /* SwiftCircleLayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE397119EC199E008C7994 /* SwiftCircleLayersTests.swift */; };
+		E7BE397C19EC1A63008C7994 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE397B19EC1A63008C7994 /* CircleLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E7BE396B19EC199E008C7994 /* SwiftCircleLayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCircleLayersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BE397019EC199E008C7994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7BE397119EC199E008C7994 /* SwiftCircleLayersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCircleLayersTests.swift; sourceTree = "<group>"; };
+		E7BE397B19EC1A63008C7994 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E7BE395B19EC199E008C7994 /* AppDelegate.swift */,
 				E7BE395D19EC199E008C7994 /* ViewController.swift */,
+				E7BE397B19EC1A63008C7994 /* CircleLayer.swift */,
 				E7BE395F19EC199E008C7994 /* Main.storyboard */,
 				E7BE396219EC199E008C7994 /* Images.xcassets */,
 				E7BE396419EC199E008C7994 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BE395E19EC199E008C7994 /* ViewController.swift in Sources */,
+				E7BE397C19EC1A63008C7994 /* CircleLayer.swift in Sources */,
 				E7BE395C19EC199E008C7994 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
