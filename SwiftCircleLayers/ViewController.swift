@@ -26,13 +26,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        for touch in touches {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if let touch = touches.first as? UITouch {
             let radius = CGFloat(25 + (arc4random() % 50))
             let circleLayer = CircleLayer(position: touch.locationInView(view), radius: radius)
             
             view.layer.addSublayer(circleLayer)
         }
+        super.touchesBegan(touches, withEvent: event)
     }
+
 }
 
