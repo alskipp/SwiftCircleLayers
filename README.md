@@ -7,4 +7,6 @@ Inspired by the following [blog post](http://www.ioscreator.com/tutorials/drawin
 
 This demo project differs in that it uses CALayers rather than sub views and drawrect. One benefit of using CALayers is that they are incredibly easy to animate.
 
+NOTE: Requires Swift 1.2.
+
 ![screenshot] (http://alskipp.github.io/SwiftCircleLayers/img/screenshot1.png)
